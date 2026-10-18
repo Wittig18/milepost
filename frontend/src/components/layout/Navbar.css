@@ -31,24 +31,20 @@
   font-weight: 800;
   color: var(--text-main) !important;
   letter-spacing: -0.03em;
+  min-height: 44px;
   border-radius: var(--radius-sm);
 }
 
-.brand-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background-color: var(--color-primary-light);
-  color: white;
-  border-radius: 8px;
-  font-weight: 800;
+.logo-mark {
+  flex-shrink: 0;
 }
 
-[data-theme='dark'] .brand-icon {
-  background-color: var(--color-primary-dark);
-  color: var(--bg-color);
+.logo-mark__released {
+  fill: var(--logo-released);
+}
+
+.logo-mark__locked {
+  fill: var(--logo-locked);
 }
 
 .nav-menu {

@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useWallet } from '../../context/useWallet';
 import { APP_ROUTES, HOME_ANCHORS } from '../../routes';
 import { AccountMenu } from './AccountMenu';
+import { LogoMark } from './LogoMark';
 import { SignInSheet } from './SignInSheet';
 import { ThemeToggle } from './ThemeToggle';
 import { useDetailsMenu } from './useDetailsMenu';
@@ -72,7 +73,7 @@ export const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-brand">
           <Link to="/" className="brand-logo">
-            <span className="brand-icon" aria-hidden="true">M</span>
+            <LogoMark />
             Milepost
           </Link>
         </div>
