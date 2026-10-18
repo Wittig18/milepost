@@ -256,12 +256,30 @@
 }
 
 
-/* The eight pills plus Menu, brand and wallet need about 1170px. Below that
-   they push the header off-screen, and the Menu already lists every one of
-   these routes with its path, so the Menu is the nav. */
-@media (max-width: 1199px) {
+/* Actions never shrink or wrap: "Sign in" stays on one line. */
+.navbar-actions {
+  flex-shrink: 0;
+}
+.connect-wallet-btn {
+  white-space: nowrap;
+  min-height: var(--tap-min);
+}
+
+/* The eight pills plus Menu, brand and the actions need about 1250px of
+   header content, more than the 1200px-wide header can hold at any width up
+   to 1599px. Until the header can grow to hold them, the Menu lists every
+   one of these routes with its path, so the Menu is the nav. */
+.navbar-links {
+  display: none;
+}
+
+@media (min-width: 1600px) {
+  .navbar {
+    max-width: 1400px;
+  }
+
   .navbar-links {
-    display: none;
+    display: flex;
   }
 }
 
