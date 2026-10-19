@@ -1,0 +1,21 @@
+{
+  "default_branch": "dev",
+  "branches": [
+    "dev",
+    "origin",
+    "solver/issue-443-23-a0",
+    "solver/issue-445-22-a0"
+  ],
+  "parent": {
+    "dev": null,
+    "origin": "dev",
+    "solver/issue-443-23-a0": "dev",
+    "solver/issue-445-22-a0": "dev"
+  },
+  "order": [
+    "dev",
+    "origin",
+    "solver/issue-443-23-a0",
+    "solver/issue-445-22-a0"
+  ]
+}
